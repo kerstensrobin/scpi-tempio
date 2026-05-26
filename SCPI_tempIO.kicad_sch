@@ -3491,6 +3491,16 @@
 	)
 	(wire
 		(pts
+			(xy 228.6 57.15) (xy 246.38 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0206d2c6-0357-4a70-88a3-a921a60880e2")
+	)
+	(wire
+		(pts
 			(xy 137.16 31.75) (xy 137.16 46.99)
 		)
 		(stroke
@@ -3521,7 +3531,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 64.77) (xy 259.08 64.77)
+			(xy 266.7 54.61) (xy 259.08 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3531,7 +3541,17 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 104.14) (xy 198.12 104.14)
+			(xy 231.14 64.77) (xy 231.14 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13ed8814-0789-405d-bcf7-cb2c7f4b9abf")
+	)
+	(wire
+		(pts
+			(xy 210.82 80.01) (xy 198.12 80.01)
 		)
 		(stroke
 			(width 0)
@@ -3541,7 +3561,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 57.15) (xy 208.28 63.5)
+			(xy 208.28 57.15) (xy 208.28 59.69)
 		)
 		(stroke
 			(width 0)
@@ -3551,7 +3571,17 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 31.75) (xy 237.49 62.23)
+			(xy 233.68 62.23) (xy 233.68 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ab804d2-5467-487c-8d6d-89678c2fa215")
+	)
+	(wire
+		(pts
+			(xy 237.49 31.75) (xy 237.49 52.07)
 		)
 		(stroke
 			(width 0)
@@ -3561,7 +3591,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 67.31) (xy 259.08 67.31)
+			(xy 264.16 57.15) (xy 259.08 57.15)
 		)
 		(stroke
 			(width 0)
@@ -3571,7 +3601,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 83.82) (xy 203.2 83.82)
+			(xy 210.82 69.85) (xy 203.2 69.85)
 		)
 		(stroke
 			(width 0)
@@ -3591,7 +3621,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 114.3) (xy 264.16 67.31)
+			(xy 264.16 57.15) (xy 264.16 85.09)
 		)
 		(stroke
 			(width 0)
@@ -3601,7 +3631,17 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 69.85) (xy 195.58 114.3)
+			(xy 231.14 59.69) (xy 246.38 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2beb7f13-f7e0-4c3d-9c4f-921290ffce49")
+	)
+	(wire
+		(pts
+			(xy 195.58 69.85) (xy 195.58 85.09)
 		)
 		(stroke
 			(width 0)
@@ -3628,16 +3668,6 @@
 			(type default)
 		)
 		(uuid "36fa3657-0754-4f9a-b4d7-c393e9fa7867")
-	)
-	(wire
-		(pts
-			(xy 231.14 69.85) (xy 246.38 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3823c589-5b0c-4def-ae42-96d5610a90dd")
 	)
 	(wire
 		(pts
@@ -3671,17 +3701,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 54.61) (xy 233.68 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "439bccb1-b594-4d72-bc53-c0c833eb428e")
-	)
-	(wire
-		(pts
-			(xy 266.7 124.46) (xy 266.7 64.77)
+			(xy 266.7 54.61) (xy 266.7 90.17)
 		)
 		(stroke
 			(width 0)
@@ -3691,7 +3711,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 114.3) (xy 210.82 114.3)
+			(xy 195.58 85.09) (xy 210.82 85.09)
 		)
 		(stroke
 			(width 0)
@@ -3701,13 +3721,23 @@
 	)
 	(wire
 		(pts
-			(xy 271.78 62.23) (xy 271.78 64.77)
+			(xy 271.78 52.07) (xy 271.78 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "487a9798-984b-4594-993c-6c448e9fc9eb")
+	)
+	(wire
+		(pts
+			(xy 261.62 80.01) (xy 218.44 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "497df14e-5f48-47b4-a3aa-b5ebe41f87d3")
 	)
 	(wire
 		(pts
@@ -3741,7 +3771,17 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 104.14) (xy 198.12 67.31)
+			(xy 259.08 74.93) (xy 218.44 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52bc366d-0052-4b2d-a8d8-0f8e10396ecb")
+	)
+	(wire
+		(pts
+			(xy 198.12 80.01) (xy 198.12 67.31)
 		)
 		(stroke
 			(width 0)
@@ -3801,23 +3841,13 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 63.5) (xy 231.14 63.5)
+			(xy 218.44 59.69) (xy 228.6 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6417fe84-1f3a-44a9-9d53-20604ea7afc0")
-	)
-	(wire
-		(pts
-			(xy 231.14 63.5) (xy 231.14 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64fe9d08-bb04-4bb6-9ff6-f6c474da8ccd")
 	)
 	(wire
 		(pts
@@ -3828,6 +3858,16 @@
 			(type default)
 		)
 		(uuid "6564f040-9477-4106-b638-7a1386bac1d3")
+	)
+	(wire
+		(pts
+			(xy 228.6 59.69) (xy 228.6 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6593faa0-b4d0-4204-adc3-25490eedf645")
 	)
 	(wire
 		(pts
@@ -3881,7 +3921,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 124.46) (xy 193.04 124.46)
+			(xy 210.82 90.17) (xy 193.04 90.17)
 		)
 		(stroke
 			(width 0)
@@ -3891,7 +3931,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 59.69) (xy 205.74 73.66)
+			(xy 205.74 59.69) (xy 205.74 64.77)
 		)
 		(stroke
 			(width 0)
@@ -3911,7 +3951,17 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 54.61) (xy 233.68 54.61)
+			(xy 218.44 64.77) (xy 231.14 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a23d1a6-459e-4479-929c-0788f9af5647")
+	)
+	(wire
+		(pts
+			(xy 218.44 54.61) (xy 246.38 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3931,6 +3981,16 @@
 	)
 	(wire
 		(pts
+			(xy 246.38 62.23) (xy 233.68 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80e8df5c-1ece-424f-b5fe-308e7ff7860a")
+	)
+	(wire
+		(pts
 			(xy 154.94 69.85) (xy 195.58 69.85)
 		)
 		(stroke
@@ -3941,7 +4001,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 93.98) (xy 259.08 72.39)
+			(xy 259.08 62.23) (xy 259.08 74.93)
 		)
 		(stroke
 			(width 0)
@@ -3991,33 +4051,13 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 93.98) (xy 210.82 93.98)
+			(xy 200.66 74.93) (xy 210.82 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "91af2746-037a-4cde-a254-88bf7f9650da")
-	)
-	(wire
-		(pts
-			(xy 233.68 64.77) (xy 246.38 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "92fcd9ed-18ff-46bf-9a06-bb4b7b663d57")
-	)
-	(wire
-		(pts
-			(xy 231.14 69.85) (xy 231.14 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9610f1a7-716d-4004-b815-95aafca30056")
 	)
 	(wire
 		(pts
@@ -4041,13 +4081,23 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 63.5) (xy 210.82 63.5)
+			(xy 208.28 59.69) (xy 210.82 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "991ed8fb-d6c2-48c2-962f-26faca3f44a4")
+	)
+	(wire
+		(pts
+			(xy 266.7 90.17) (xy 218.44 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1105707-1607-414f-aab3-e0fdd39444a2")
 	)
 	(wire
 		(pts
@@ -4061,7 +4111,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 124.46) (xy 193.04 72.39)
+			(xy 193.04 90.17) (xy 193.04 72.39)
 		)
 		(stroke
 			(width 0)
@@ -4088,16 +4138,6 @@
 			(type default)
 		)
 		(uuid "b01674ff-608b-4185-9855-6ec0213a8346")
-	)
-	(wire
-		(pts
-			(xy 218.44 73.66) (xy 231.14 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0fe1073-1cb7-4a6a-82b4-02fd394aef84")
 	)
 	(wire
 		(pts
@@ -4161,7 +4201,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 73.66) (xy 210.82 73.66)
+			(xy 205.74 64.77) (xy 210.82 64.77)
 		)
 		(stroke
 			(width 0)
@@ -4181,7 +4221,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 64.77) (xy 200.66 93.98)
+			(xy 200.66 64.77) (xy 200.66 74.93)
 		)
 		(stroke
 			(width 0)
@@ -4201,26 +4241,6 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 104.14) (xy 261.62 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd2e8dc5-2b01-4d67-be7f-3dedb204d1f8")
-	)
-	(wire
-		(pts
-			(xy 218.44 124.46) (xy 266.7 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bfa6f1a0-f502-4ffd-8111-0515ddcce0f7")
-	)
-	(wire
-		(pts
 			(xy 154.94 57.15) (xy 208.28 57.15)
 		)
 		(stroke
@@ -4231,23 +4251,13 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 83.82) (xy 203.2 62.23)
+			(xy 203.2 69.85) (xy 203.2 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c3b2f4e8-e26a-41aa-b0da-1d34e53f8f4e")
-	)
-	(wire
-		(pts
-			(xy 233.68 72.39) (xy 246.38 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c7758640-8f53-457d-b41b-009ce105f25f")
 	)
 	(wire
 		(pts
@@ -4321,16 +4331,6 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 93.98) (xy 259.08 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc556971-ea8b-407b-903d-074eb9cc7b4d")
-	)
-	(wire
-		(pts
 			(xy 107.95 31.75) (xy 137.16 31.75)
 		)
 		(stroke
@@ -4341,7 +4341,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 62.23) (xy 246.38 62.23)
+			(xy 237.49 52.07) (xy 246.38 52.07)
 		)
 		(stroke
 			(width 0)
@@ -4361,16 +4361,6 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 72.39) (xy 233.68 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e33fcca0-d489-46ad-9e13-de5407e167bd")
-	)
-	(wire
-		(pts
 			(xy 78.74 135.89) (xy 170.18 135.89)
 		)
 		(stroke
@@ -4381,17 +4371,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 67.31) (xy 246.38 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e546e2c1-39d2-4003-b249-6b679998787f")
-	)
-	(wire
-		(pts
-			(xy 218.44 83.82) (xy 233.68 83.82)
+			(xy 218.44 69.85) (xy 233.68 69.85)
 		)
 		(stroke
 			(width 0)
@@ -4421,7 +4401,17 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 69.85) (xy 259.08 69.85)
+			(xy 264.16 85.09) (xy 218.44 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec7ac349-c147-4f1c-9d49-abec8c165ba3")
+	)
+	(wire
+		(pts
+			(xy 261.62 59.69) (xy 259.08 59.69)
 		)
 		(stroke
 			(width 0)
@@ -4431,7 +4421,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 62.23) (xy 271.78 62.23)
+			(xy 259.08 52.07) (xy 271.78 52.07)
 		)
 		(stroke
 			(width 0)
@@ -4471,23 +4461,13 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 104.14) (xy 261.62 69.85)
+			(xy 261.62 59.69) (xy 261.62 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fbcd8ff9-a070-4387-893d-2128bc7883c2")
-	)
-	(wire
-		(pts
-			(xy 218.44 114.3) (xy 264.16 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc3ebcbe-fcac-47e1-80d1-b3bd46032068")
 	)
 	(image
 		(at 276.86 173.99)
@@ -4856,7 +4836,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 271.78 64.77 0)
+		(at 271.78 54.61 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4867,7 +4847,7 @@
 		(fields_autoplaced yes)
 		(uuid "02141331-9bda-4e32-8197-81db7f4b67e3")
 		(property "Reference" "#PWR05"
-			(at 271.78 71.12 0)
+			(at 271.78 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4878,7 +4858,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 271.78 69.85 0)
+			(at 271.78 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4888,7 +4868,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 271.78 64.77 0)
+			(at 271.78 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4899,7 +4879,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 271.78 64.77 0)
+			(at 271.78 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4910,7 +4890,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 271.78 64.77 0)
+			(at 271.78 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5011,86 +4991,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 214.63 114.3 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0e21a480-16bb-4d8b-b5c1-039fcfb8b9f9")
-		(property "Reference" "R6"
-			(at 214.63 107.95 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "330"
-			(at 214.63 110.49 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 214.63 116.078 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 214.63 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 214.63 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4304f3ca-f66f-4782-8f44-3f6a8661e9e7")
-		)
-		(pin "2"
-			(uuid "8f24dff8-e7d1-47b8-b969-0a1c9e8a0dc4")
-		)
-		(instances
-			(project "SCPI_tempIO"
-				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 80.01 41.91 0)
 		(unit 1)
@@ -5163,86 +5063,6 @@
 			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 214.63 83.82 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "176f1b6d-8b7a-4f65-916c-eaf641e46e73")
-		(property "Reference" "R4"
-			(at 214.63 77.47 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "330"
-			(at 214.63 80.01 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 214.63 85.598 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 214.63 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 214.63 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5febb1b4-c8d6-47b9-97c5-5648b33c2841")
-		)
-		(pin "2"
-			(uuid "1fa94aef-52a7-451b-a763-c515946cd71d")
-		)
-		(instances
-			(project "SCPI_tempIO"
-				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
-					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -5487,86 +5307,6 @@
 			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 214.63 63.5 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1e6eb11d-fe05-492b-bf08-8679bb52c555")
-		(property "Reference" "R2"
-			(at 214.63 57.15 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "330"
-			(at 214.63 59.69 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 214.63 65.278 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 214.63 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 214.63 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "53507afd-990f-49b5-8673-cb90717d8aef")
-		)
-		(pin "2"
-			(uuid "9aae1a55-19e2-4326-a1e6-d682ec75ded1")
-		)
-		(instances
-			(project "SCPI_tempIO"
-				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
-					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -5828,7 +5568,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 214.63 124.46 90)
+		(at 214.63 59.69 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5836,30 +5576,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "278cf870-7a07-4263-80de-34cfa80805dd")
-		(property "Reference" "R7"
-			(at 214.63 118.11 90)
+		(uuid "237cdbd2-ee6d-43fa-9e48-888f22407f13")
+		(property "Reference" "R15"
+			(at 217.17 57.15 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "330"
-			(at 214.63 120.65 90)
+			(at 217.17 59.69 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 214.63 126.238 90)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 214.63 61.468 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5870,7 +5611,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 214.63 124.46 0)
+			(at 214.63 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5881,7 +5622,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 214.63 124.46 0)
+			(at 214.63 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5892,95 +5633,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "7bcd4566-9cd6-4c44-9004-12b4f6247698")
+			(uuid "1fcd2c38-936e-489c-b9d1-6c0fe8516805")
 		)
 		(pin "2"
-			(uuid "074ba648-193b-42c2-9dab-b33d134b5a8e")
+			(uuid "53730b07-7a18-47d2-9535-4c4a0437382d")
 		)
 		(instances
 			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 214.63 104.14 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "27a6ed1a-eeaa-42ee-9903-2eb92e803842")
-		(property "Reference" "R8"
-			(at 214.63 97.79 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "330"
-			(at 214.63 100.33 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 214.63 105.918 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 214.63 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 214.63 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ccc8c4ea-e760-46f4-85bc-6b2526746909")
-		)
-		(pin "2"
-			(uuid "4992edba-9403-44a4-b7c0-33d2447c1d66")
-		)
-		(instances
-			(project "SCPI_tempIO"
-				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
-					(reference "R8")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -6147,6 +5808,87 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 214.63 69.85 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3b5ebd75-fca7-4ae2-817f-99064b4a3505")
+		(property "Reference" "R17"
+			(at 217.17 67.31 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "330"
+			(at 217.17 69.85 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 214.63 71.628 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 214.63 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3ee899cf-1a2c-4b1f-bb9b-4813f2fc4309")
+		)
+		(pin "2"
+			(uuid "bb1ecf49-30de-4937-8aba-bb8f5d69d1d3")
+		)
+		(instances
+			(project "SCPI_tempIO"
+				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 53.34 74.93 90)
 		(unit 1)
 		(body_style 1)
@@ -6227,6 +5969,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 214.63 74.93 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4ec8c77b-b1bd-4a6c-9223-65667efbb5fb")
+		(property "Reference" "R18"
+			(at 217.17 72.39 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "330"
+			(at 217.17 74.93 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 214.63 76.708 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 214.63 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "46b6efb9-a152-4deb-93e2-dc33f61523f7")
+		)
+		(pin "2"
+			(uuid "95293828-d76a-454e-8b03-4fc23cdfb3cb")
+		)
+		(instances
+			(project "SCPI_tempIO"
+				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
+					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 101.6 95.25 0)
 		(mirror y)
@@ -6299,6 +6122,87 @@
 			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 214.63 64.77 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "543527c7-1562-4fa2-96c8-ea4b5598d26c")
+		(property "Reference" "R16"
+			(at 217.17 62.23 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "330"
+			(at 217.17 64.77 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 214.63 66.548 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 214.63 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c63e78e3-63bd-4fd1-ab0a-c01e9cff525f")
+		)
+		(pin "2"
+			(uuid "f78073a9-4200-4c92-96f7-5be16cfd3b37")
+		)
+		(instances
+			(project "SCPI_tempIO"
+				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -6658,6 +6562,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 214.63 85.09 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "64991c1c-25d5-4d19-a550-d397ad08f357")
+		(property "Reference" "R20"
+			(at 217.17 82.55 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "330"
+			(at 217.17 85.09 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 214.63 86.868 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 214.63 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "07524703-2f1f-4aad-aae6-182f69eec918")
+		)
+		(pin "2"
+			(uuid "80409eb7-c0e2-411d-9d95-3a875ad7cdd5")
+		)
+		(instances
+			(project "SCPI_tempIO"
+				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_ARM_JTAG_SWD_10")
 		(at 66.04 138.43 0)
 		(unit 1)
@@ -6758,166 +6743,6 @@
 			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 214.63 93.98 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7b526e2d-f6cb-4a2f-bc76-a127eaafeb29")
-		(property "Reference" "R5"
-			(at 214.63 87.63 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "330"
-			(at 214.63 90.17 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 214.63 95.758 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 214.63 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 214.63 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e0a4ce86-3cf3-49b8-a74c-fe0e6cfd9e5d")
-		)
-		(pin "2"
-			(uuid "8b6e2f65-ed1c-4da1-925e-a65c591a5faf")
-		)
-		(instances
-			(project "SCPI_tempIO"
-				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 214.63 54.61 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "824886ff-f3f7-4c92-8d0c-58f3df2532d3")
-		(property "Reference" "R1"
-			(at 214.63 48.26 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "330"
-			(at 214.63 50.8 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 214.63 56.388 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 214.63 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 214.63 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9161c8bb-f5bc-40ad-a84f-a522592a58d9")
-		)
-		(pin "2"
-			(uuid "268baf30-c8c8-4787-8e41-33a40b39d432")
-		)
-		(instances
-			(project "SCPI_tempIO"
-				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
-					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -7165,6 +6990,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 214.63 54.61 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9d152209-d962-4424-a6e4-c7799fa3058f")
+		(property "Reference" "R14"
+			(at 217.17 52.07 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "330"
+			(at 217.17 54.61 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 214.63 56.388 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 214.63 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "32d8702f-5737-45ae-beb5-3f1902b1e26a")
+		)
+		(pin "2"
+			(uuid "a38fb4b2-f630-4d7e-8c14-01c98b6fcd4b")
+		)
+		(instances
+			(project "SCPI_tempIO"
+				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 158.75 100.33 90)
 		(unit 1)
@@ -7259,7 +7165,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x05_Odd_Even")
-		(at 251.46 67.31 0)
+		(at 251.46 57.15 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7270,7 +7176,7 @@
 		(fields_autoplaced yes)
 		(uuid "b7d7ccf4-3c1c-4159-84d4-54d964802d83")
 		(property "Reference" "J2"
-			(at 252.73 55.88 0)
+			(at 252.73 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7280,7 +7186,7 @@
 			)
 		)
 		(property "Value" "Conn_02x05_Odd_Even"
-			(at 252.73 58.42 0)
+			(at 252.73 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7290,7 +7196,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 251.46 67.31 0)
+			(at 251.46 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7301,7 +7207,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 251.46 67.31 0)
+			(at 251.46 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7312,7 +7218,7 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 251.46 67.31 0)
+			(at 251.46 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7440,6 +7346,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 214.63 90.17 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d1e5c2fe-a614-4ea4-bf3d-f592931ade67")
+		(property "Reference" "R21"
+			(at 217.17 87.63 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "330"
+			(at 217.17 90.17 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 214.63 91.948 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 214.63 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "27b50ac3-d608-4a82-b4c0-f247cea54b1c")
+		)
+		(pin "2"
+			(uuid "1064eb15-7bc8-44f2-b71f-714b1e2b7a13")
+		)
+		(instances
+			(project "SCPI_tempIO"
+				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 69.85 101.6 0)
 		(unit 1)
@@ -7516,86 +7503,6 @@
 			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 214.63 73.66 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d7f9ae5c-660f-4481-860f-99b6aeb03cf5")
-		(property "Reference" "R3"
-			(at 214.63 67.31 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "330"
-			(at 214.63 69.85 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 214.63 75.438 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 214.63 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 214.63 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c783bfb5-22ef-41cd-8204-8a512acfa280")
-		)
-		(pin "2"
-			(uuid "f8ee4a17-ff35-41b2-b159-508dce9788c8")
-		)
-		(instances
-			(project "SCPI_tempIO"
-				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
-					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -8092,6 +7999,87 @@
 			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 214.63 80.01 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f8b99feb-8937-4c21-8543-730d63d648a3")
+		(property "Reference" "R19"
+			(at 217.17 77.47 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "330"
+			(at 217.17 80.01 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 214.63 81.788 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 214.63 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a94bb652-ed03-49b3-a7af-3a18cf9b4ead")
+		)
+		(pin "2"
+			(uuid "69bba61e-197a-4d28-9694-586a766b2111")
+		)
+		(instances
+			(project "SCPI_tempIO"
+				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
+					(reference "R19")
 					(unit 1)
 				)
 			)
