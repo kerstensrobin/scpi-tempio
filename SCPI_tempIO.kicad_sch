@@ -11,269 +11,6 @@
 		(company "nacho.works")
 	)
 	(lib_symbols
-		(symbol "Connector:Conn_01x04_Pin"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x04_Pin"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x04, script generated"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Conn_01x04_Pin_1_1"
-				(rectangle
-					(start 0.8636 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -4.953)
-					(end 0 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 2.54) (xy 0.8636 2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 0.8636 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -5.08) (xy 0.8636 -5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -5.08 180)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector:Conn_ARM_JTAG_SWD_10"
 			(pin_names
 				(offset 1.016)
@@ -3242,178 +2979,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Sensor_Humidity:SHT4x"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 0 8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Value" "SHT4x"
-				(at 0 6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Footprint" "Sensor_Humidity:Sensirion_DFN-4_1.5x1.5mm_P0.8mm_SHT4x_NoCentralPad"
-				(at 3.81 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Datasheet" "https://sensirion.com/media/documents/33FD6951/624C4357/Datasheet_SHT4x.pdf"
-				(at 3.81 -8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Description" "Digital Humidity and Temperature Sensor, ±1%RH, ±0.1°C, I2C, 1.08-3.6V, 16bit, DFN-4"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Sensirion environment environmental measurement digital SHT40 SHT41 SHT45"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Sensirion?DFN*1.5x1.5mm*P0.8mm*SHT4x*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SHT4x_1_1"
-				(rectangle
-					(start -5.08 5.08)
-					(end 5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin bidirectional line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "SDA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "SCL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 2.54 7.62 270)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 2.54 -7.62 90)
-					(length 2.54)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Switch:SW_SPST"
 			(pin_names
 				(offset 0)
@@ -3681,12 +3246,6 @@
 		)
 	)
 	(junction
-		(at 101.6 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "000355b0-ab2e-41cc-92a7-e048da06a88a")
-	)
-	(junction
 		(at 46.99 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3697,12 +3256,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "11516e25-b35c-483e-a1f1-d3800c01eb84")
-	)
-	(junction
-		(at 101.6 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "12831305-12b8-421d-8ad0-d73a959e7dc2")
 	)
 	(junction
 		(at 81.28 107.95)
@@ -3741,34 +3294,10 @@
 		(uuid "7ab29c0e-b271-4620-9a10-93dc5aefc946")
 	)
 	(junction
-		(at 101.6 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "82607a6a-3e15-41c8-8c5f-8e6127137df4")
-	)
-	(junction
 		(at 107.95 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "87e54d43-994f-412f-bf07-edaec7d28b46")
-	)
-	(junction
-		(at 111.76 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8b143e73-ac09-477c-b077-9d0488665881")
-	)
-	(junction
-		(at 111.76 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dc5fdb5f-736e-4961-9dc9-1785e7222a02")
-	)
-	(junction
-		(at 85.09 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e106765a-a89d-4cb1-b7bf-0821c29886ce")
 	)
 	(junction
 		(at 137.16 31.75)
@@ -3814,16 +3343,6 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 85.09) (xy 101.6 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "06b71f75-2f6e-4051-b8b7-c8da066102f1")
-	)
-	(wire
-		(pts
 			(xy 266.7 54.61) (xy 259.08 54.61)
 		)
 		(stroke
@@ -3831,6 +3350,16 @@
 			(type default)
 		)
 		(uuid "08512515-e3c6-4cab-8ac3-5793ebe60c4e")
+	)
+	(wire
+		(pts
+			(xy 106.68 85.09) (xy 119.38 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13174c0c-9338-42ac-a5da-c6a78b9b5cc6")
 	)
 	(wire
 		(pts
@@ -3851,16 +3380,6 @@
 			(type default)
 		)
 		(uuid "14d5d7c6-1766-44b2-bf47-d4a56daf00ef")
-	)
-	(wire
-		(pts
-			(xy 101.6 87.63) (xy 111.76 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1748e37d-ac34-47d7-a9c6-df6e01f4afd4")
 	)
 	(wire
 		(pts
@@ -3911,16 +3430,6 @@
 			(type default)
 		)
 		(uuid "278a198d-0d41-463e-91e1-3ef8c10f1694")
-	)
-	(wire
-		(pts
-			(xy 85.09 78.74) (xy 85.09 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2981addd-2350-4766-a0a8-ce9f33f9cf96")
 	)
 	(wire
 		(pts
@@ -4034,16 +3543,6 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 85.09) (xy 119.38 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43d90ae0-9e24-45b6-9586-e965e4912373")
-	)
-	(wire
-		(pts
 			(xy 195.58 85.09) (xy 210.82 85.09)
 		)
 		(stroke
@@ -4124,6 +3623,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 87.63) (xy 119.38 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56e5a394-6d55-48dd-a81b-2add0c8523c5")
+	)
+	(wire
+		(pts
 			(xy 49.53 77.47) (xy 46.99 77.47)
 		)
 		(stroke
@@ -4131,16 +3640,6 @@
 			(type default)
 		)
 		(uuid "57f0896b-b364-4397-ba08-c45eaa763aae")
-	)
-	(wire
-		(pts
-			(xy 95.25 87.63) (xy 101.6 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58b30f4c-d387-4a29-ad60-4c92571f1b45")
 	)
 	(wire
 		(pts
@@ -4204,16 +3703,6 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 74.93) (xy 85.09 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68f8da30-e870-4241-a197-34b106dae035")
-	)
-	(wire
-		(pts
 			(xy 66.04 96.52) (xy 66.04 123.19)
 		)
 		(stroke
@@ -4224,16 +3713,6 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 78.74) (xy 101.6 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72eb16b9-0dbb-4aee-b758-e4e19b13b952")
-	)
-	(wire
-		(pts
 			(xy 81.28 54.61) (xy 81.28 107.95)
 		)
 		(stroke
@@ -4241,16 +3720,6 @@
 			(type default)
 		)
 		(uuid "72f2f047-f0a9-4af3-9e64-bbb8c60e056d")
-	)
-	(wire
-		(pts
-			(xy 85.09 78.74) (xy 101.6 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "735f1992-5b57-4bfe-a236-cf79f7cf1c20")
 	)
 	(wire
 		(pts
@@ -4331,26 +3800,6 @@
 			(type default)
 		)
 		(uuid "8223fc28-a377-4dfc-85c2-acead74c6525")
-	)
-	(wire
-		(pts
-			(xy 101.6 82.55) (xy 111.76 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "822f01bb-81f8-41f9-9bf0-52ec950f29a0")
-	)
-	(wire
-		(pts
-			(xy 111.76 87.63) (xy 119.38 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8510a0b6-64d4-45d7-b8a4-d9e68056f199")
 	)
 	(wire
 		(pts
@@ -4644,16 +4093,6 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 90.17) (xy 95.25 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cda58cf3-02d8-493c-a45f-1ac1c6015412")
-	)
-	(wire
-		(pts
 			(xy 59.69 77.47) (xy 57.15 77.47)
 		)
 		(stroke
@@ -4684,16 +4123,6 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 85.09) (xy 111.76 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dbed99ff-1982-4109-9755-8c4cbcb159c0")
-	)
-	(wire
-		(pts
 			(xy 87.63 31.75) (xy 96.52 31.75)
 		)
 		(stroke
@@ -4721,6 +4150,16 @@
 			(type default)
 		)
 		(uuid "e04b96a2-e774-4a5d-b7fd-e37d10efdcc2")
+	)
+	(wire
+		(pts
+			(xy 93.98 85.09) (xy 87.63 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4d96ab3-560d-4599-b0a4-f90378861889")
 	)
 	(wire
 		(pts
@@ -5022,12 +4461,12 @@
 		(uuid "ae4b180b-df2d-4e89-8256-27be7c81af0e")
 	)
 	(label "3v3"
-		(at 85.09 74.93 270)
+		(at 87.63 85.09 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "db07762a-a902-4660-abec-fcef3526f0e4")
 	)
@@ -6567,84 +6006,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 85.09 95.25 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "53473a12-2bf9-46fa-b11f-f14647141461")
-		(property "Reference" "#PWR06"
-			(at 85.09 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 85.09 99.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 85.09 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 85.09 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 85.09 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d037b73d-6d7d-4ae5-8efd-c8b1b24f3cc6")
-		)
-		(instances
-			(project "SCPI_tempIO"
-				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 214.63 64.77 90)
 		(unit 1)
@@ -7425,92 +6786,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x04_Pin")
-		(at 106.68 85.09 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8e75385c-4f50-460f-8a7c-6febe81307b5")
-		(property "Reference" "J5"
-			(at 107.315 77.47 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x04_Pin"
-			(at 107.315 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_1.00mm:PinSocket_1x04_P1.00mm_Vertical"
-			(at 106.68 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 106.68 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 106.68 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "c6047060-26b1-473d-8ec9-6a730ca8dda5")
-		)
-		(pin "4"
-			(uuid "1e16e4fc-c22c-4adf-8791-8b2733877713")
-		)
-		(pin "1"
-			(uuid "59097aab-673d-419c-966c-a37e2dab5331")
-		)
-		(pin "3"
-			(uuid "0fb54db6-a9b5-4221-80a2-b0116a32f42f")
-		)
-		(instances
-			(project "SCPI_tempIO"
-				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
-					(reference "J5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 158.75 91.44 0)
 		(unit 1)
@@ -7674,84 +6949,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 111.76 90.17 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a79c2dbd-cfae-466c-8c22-f3babb0c1b94")
-		(property "Reference" "#PWR017"
-			(at 111.76 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 111.76 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 111.76 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 111.76 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b441c745-dcc7-46ce-9e35-81a6bea8d49f")
-		)
-		(instances
-			(project "SCPI_tempIO"
-				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
 		(at 158.75 100.33 90)
 		(unit 1)
@@ -7785,7 +6982,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
 			(at 158.75 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -8005,84 +7202,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 101.6 90.17 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d8f92192-ae46-42e6-9743-c4e793e6801a")
-		(property "Reference" "#PWR016"
-			(at 101.6 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 101.6 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 101.6 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 101.6 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 101.6 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "22c14efc-74d6-4e79-8b4d-40ee4ac4df89")
-		)
-		(instances
-			(project "SCPI_tempIO"
-				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
-					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 100.33 132.08 0)
 		(unit 1)
 		(body_style 1)
@@ -8243,182 +7362,6 @@
 			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Sensor_Humidity:SHT4x")
-		(at 87.63 87.63 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dbc70e96-cb91-4fd1-8f22-bbbcd2890844")
-		(property "Reference" "U3"
-			(at 81.28 86.3599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SHT4x"
-			(at 81.28 88.8999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Sensor_Humidity:Sensirion_DFN-4_1.5x1.5mm_P0.8mm_SHT4x_NoCentralPad"
-			(at 83.82 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "https://sensirion.com/media/documents/33FD6951/624C4357/Datasheet_SHT4x.pdf"
-			(at 83.82 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "Digital Humidity and Temperature Sensor, ±1%RH, ±0.1°C, I2C, 1.08-3.6V, 16bit, DFN-4"
-			(at 87.63 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3c599df9-8888-49b5-9942-8e39de0aac78")
-		)
-		(pin "2"
-			(uuid "f58dc86e-de90-49ea-9675-c77c28c4f5c1")
-		)
-		(pin "4"
-			(uuid "ed144902-7819-4233-829b-fa4807a44b40")
-		)
-		(pin "3"
-			(uuid "e38d3cd2-f82c-4ead-8c4f-8276c17c0a91")
-		)
-		(instances
-			(project "SCPI_tempIO"
-				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x04_Pin")
-		(at 96.52 85.09 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "df228f1c-030d-41e6-bdd5-cb3a3807a55a")
-		(property "Reference" "J4"
-			(at 97.79 74.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x04_Pin"
-			(at 95.25 76.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_1.00mm:PinSocket_1x04_P1.00mm_Vertical"
-			(at 96.52 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 96.52 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 96.52 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "eadfc675-f4f9-406e-a151-1c3b4db510d4")
-		)
-		(pin "4"
-			(uuid "e13a2de2-b8c5-4938-95fe-e4a1f0fbdbb3")
-		)
-		(pin "1"
-			(uuid "a4dc5562-1085-4786-b62a-fec663cf2dd2")
-		)
-		(pin "3"
-			(uuid "0051993f-9d9b-4ab6-9e44-2644cdefb820")
-		)
-		(instances
-			(project "SCPI_tempIO"
-				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
-					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -8761,6 +7704,81 @@
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R19")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 93.98 81.28)
+		(size 12.7 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "cc2d6260-83c2-4229-a343-72f05fc7240c")
+		(property "Sheetname" "SHT4x_sub"
+			(at 93.98 80.5684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SHT4x_sub.kicad_sch"
+			(at 90.17 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "3v3" input
+			(at 93.98 85.09 180)
+			(uuid "6cb055c0-76b7-4a7f-a744-7a59746c3679")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCL" bidirectional
+			(at 106.68 85.09 0)
+			(uuid "b88efac0-9fc5-4123-8c49-713ba4a10c7b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SDA" bidirectional
+			(at 106.68 87.63 0)
+			(uuid "b1bfb494-5b37-4d1e-acac-55d82038b355")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "SCPI_tempIO"
+				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
+					(page "2")
 				)
 			)
 		)
