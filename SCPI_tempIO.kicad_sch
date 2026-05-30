@@ -384,7 +384,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:USB_C_Receptacle_USB2.0_14P"
+		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"
 			(pin_names
 				(offset 1.016)
 			)
@@ -403,7 +403,7 @@
 					)
 				)
 			)
-			(property "Value" "USB_C_Receptacle_USB2.0_14P"
+			(property "Value" "USB_C_Receptacle_USB2.0_16P"
 				(at 0 19.685 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -435,7 +435,7 @@
 					)
 				)
 			)
-			(property "Description" "USB 2.0-only 14P Type-C Receptacle connector"
+			(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -468,7 +468,7 @@
 					)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_14P_0_0"
+			(symbol "USB_C_Receptacle_USB2.0_16P_0_0"
 				(rectangle
 					(start -0.254 -17.78)
 					(end 0.254 -16.764)
@@ -557,8 +557,30 @@
 						(type none)
 					)
 				)
+				(rectangle
+					(start 10.16 -12.446)
+					(end 9.144 -12.954)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 -14.986)
+					(end 9.144 -15.494)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_14P_0_1"
+			(symbol "USB_C_Receptacle_USB2.0_16P_0_1"
 				(rectangle
 					(start -10.16 17.78)
 					(end 10.16 -17.78)
@@ -759,7 +781,7 @@
 					)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_14P_1_1"
+			(symbol "USB_C_Receptacle_USB2.0_16P_1_1"
 				(pin passive line
 					(at 0 -22.86 90)
 					(length 5.08)
@@ -843,6 +865,24 @@
 						)
 					)
 					(number "A7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -12.7 180)
+					(length 5.08)
+					(name "SBU1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -973,6 +1013,24 @@
 						)
 					)
 					(number "B7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -15.24 180)
+					(length 5.08)
+					(name "SBU2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3245,11 +3303,16 @@
 			(embedded_fonts no)
 		)
 	)
-	(junction
-		(at 46.99 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0fb1d170-882a-469e-bb98-c9f3eba9363a")
+	(text "\nC5,C6,C9\nC49678\n100n\n0805\n\nC7\nC28323\n1u\n0805\n\nC8\nC1744\n4.7n\n0805\n\nD1\nC965793\nLED\n0402\n\nJ1\nC2935458\nConn_ARM_JTAG_SWD_10\nPinHeader_2x05_P1.27mm_Vertical_SMD\n\nJ3\nC963213\nUSB_C_Receptacle_USB2.0_16P\nUSB_C_Receptacle_G-Switch_GT-USB-7025\n\nR9\nC11702\n1000\n0402\n\nR10,R11\nC25905\n5.1k\n0402\n\nR12,R13\nC25092\n22\n0402\n\nR14,R15,R16,R17,R18,R19,R20,R21\nC25104\n330\n0402\n\nR23,R24\nC25744\n10k\n0402\n\nSW1\nC10852\nSW_SPST\nSW_Push_1P1T_NO_CK_KSC7xxJ\n\nU1\nC5270165\nST STM32G0B1KBT6\nLQFP-32_7x7mm_P0.8mm\n\nU2\nC23380830\nAP2112K-3.3\nSOT-23-5\n\nU3\nC54946589\nSHT4x\nSensirion_DFN-4_1.5x1.5mm_P0.8mm_SHT4x_NoCentralPad\n"
+		(exclude_from_sim no)
+		(at 99.06 196.85 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d3ce13b5-05b8-4666-920d-ebf5b8386c15")
 	)
 	(junction
 		(at 59.69 77.47)
@@ -3258,16 +3321,16 @@
 		(uuid "11516e25-b35c-483e-a1f1-d3800c01eb84")
 	)
 	(junction
-		(at 81.28 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1c8adf59-833a-4cc1-bd3d-6845d5319f0e")
-	)
-	(junction
 		(at 46.99 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2da272e2-8e1c-456d-8fd2-a686112ebed0")
+		(uuid "209811b3-7dbb-4205-a87e-63794cb3f655")
+	)
+	(junction
+		(at 81.28 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "49683b8d-6f07-4368-a236-e663566b5627")
 	)
 	(junction
 		(at 69.85 31.75)
@@ -3300,16 +3363,28 @@
 		(uuid "87e54d43-994f-412f-bf07-edaec7d28b46")
 	)
 	(junction
+		(at 100.33 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa8a5ec5-38d1-4647-b5c1-a3f8cc35955d")
+	)
+	(junction
 		(at 137.16 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e8b12364-6e6b-43a5-907c-c56fdb2e1269")
 	)
 	(junction
-		(at 86.36 130.81)
+		(at 81.28 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "fb236eaa-8476-467b-920e-a50b80647681")
+		(uuid "ecba70aa-d958-4277-a228-c95cfe95f63a")
+	)
+	(junction
+		(at 46.99 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fbb57150-4c3d-4b2e-b056-f437b8ca5d6e")
 	)
 	(wire
 		(pts
@@ -3370,6 +3445,16 @@
 			(type default)
 		)
 		(uuid "13ed8814-0789-405d-bcf7-cb2c7f4b9abf")
+	)
+	(wire
+		(pts
+			(xy 81.28 118.11) (xy 81.28 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13f01fcd-0533-4c1f-bf0e-9cdba1c98932")
 	)
 	(wire
 		(pts
@@ -3470,6 +3555,16 @@
 			(type default)
 		)
 		(uuid "2c492b0c-39a3-4afa-8336-ab6e94e348a5")
+	)
+	(wire
+		(pts
+			(xy 96.52 118.11) (xy 100.33 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3171139e-90ef-4a65-870c-e784fabdb1d9")
 	)
 	(wire
 		(pts
@@ -3653,13 +3748,13 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 107.95) (xy 86.36 130.81)
+			(xy 100.33 118.11) (xy 100.33 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5e23286d-abf9-427e-b7d4-ca985355e27f")
+		(uuid "5aa7f988-0826-4e31-a35f-da88353a5dac")
 	)
 	(wire
 		(pts
@@ -3713,7 +3808,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 54.61) (xy 81.28 107.95)
+			(xy 81.28 54.61) (xy 81.28 118.11)
 		)
 		(stroke
 			(width 0)
@@ -3913,16 +4008,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 130.81) (xy 87.63 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3fd22fc-1243-46af-a1b0-0db3b8ff1a35")
-	)
-	(wire
-		(pts
 			(xy 193.04 90.17) (xy 193.04 72.39)
 		)
 		(stroke
@@ -3933,7 +4018,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 107.95) (xy 86.36 107.95)
+			(xy 81.28 118.11) (xy 88.9 118.11)
 		)
 		(stroke
 			(width 0)
@@ -4000,16 +4085,6 @@
 			(type default)
 		)
 		(uuid "b5e57263-0733-4cf0-80e1-2715f8984f50")
-	)
-	(wire
-		(pts
-			(xy 81.28 110.49) (xy 81.28 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b60a8f15-3183-447f-824e-53926f74fda9")
 	)
 	(wire
 		(pts
@@ -4153,6 +4228,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 130.81) (xy 87.63 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e16f5ffd-5619-45c4-a910-1877f6c8210f")
+	)
+	(wire
+		(pts
 			(xy 93.98 85.09) (xy 87.63 85.09)
 		)
 		(stroke
@@ -4233,7 +4318,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 130.81) (xy 86.36 130.81)
+			(xy 78.74 130.81) (xy 81.28 130.81)
 		)
 		(stroke
 			(width 0)
@@ -4540,7 +4625,7 @@
 			(uuid "f4103f1e-f52f-41cb-b415-3fac827982ed")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR03")
 					(unit 1)
@@ -4618,7 +4703,7 @@
 			(uuid "2e2d0a24-2f79-4199-8773-2fe5dbc85b85")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR02")
 					(unit 1)
@@ -4696,7 +4781,7 @@
 			(uuid "2e1985f8-703b-41a1-9746-16f5c25ad50c")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR05")
 					(unit 1)
@@ -4774,7 +4859,7 @@
 			(uuid "affaa314-3b02-40e3-83e5-76f97e1f90c8")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR04")
 					(unit 1)
@@ -4852,7 +4937,7 @@
 			(uuid "b3c476c5-ac33-49cb-ad0f-c672be618980")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR01")
 					(unit 1)
@@ -4932,7 +5017,7 @@
 			(uuid "f059443d-17cd-4a2b-ae77-32f13a5bf87b")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "SW1")
 					(unit 1)
@@ -5013,7 +5098,7 @@
 			(uuid "7febe758-2775-4182-a387-384d8ff1ced4")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R10")
 					(unit 1)
@@ -5044,7 +5129,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "STM32G070KBTx"
+		(property "Value" "STM32G0B1KBT6"
 			(at 139.3033 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5186,7 +5271,7 @@
 			(uuid "67f6b2cd-139e-4f72-b4c6-efba4e78c424")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "U1")
 					(unit 1)
@@ -5267,7 +5352,7 @@
 			(uuid "53730b07-7a18-47d2-9535-4c4a0437382d")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R15")
 					(unit 1)
@@ -5349,7 +5434,7 @@
 			(uuid "5df0f2b9-838a-4095-ba4d-bd4637284675")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "C8")
 					(unit 1)
@@ -5359,7 +5444,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 81.28 114.3 0)
+		(at 92.71 118.11 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5370,29 +5455,27 @@
 		(fields_autoplaced yes)
 		(uuid "272e7a3e-7464-499c-b6bf-e0ada1932a74")
 		(property "Reference" "C5"
-			(at 85.09 113.0299 0)
+			(at 92.71 110.49 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "100n"
-			(at 85.09 115.5699 0)
+			(at 92.71 113.03 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 82.2452 118.11 0)
+			(at 96.52 117.1448 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5403,7 +5486,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 114.3 0)
+			(at 92.71 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5414,7 +5497,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 81.28 114.3 0)
+			(at 92.71 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5431,7 +5514,7 @@
 			(uuid "a9860326-331b-47c4-b2ec-a974c7ba2642")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "C5")
 					(unit 1)
@@ -5509,7 +5592,7 @@
 			(uuid "453f343b-4bb2-4228-b027-fc445927b0b0")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR011")
 					(unit 1)
@@ -5591,7 +5674,7 @@
 			(uuid "13cfe599-736c-4238-be52-415d44a36385")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "C7")
 					(unit 1)
@@ -5672,7 +5755,7 @@
 			(uuid "a2676285-23ac-4455-936f-e03208390c8e")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R12")
 					(unit 1)
@@ -5753,7 +5836,7 @@
 			(uuid "bb1ecf49-30de-4937-8aba-bb8f5d69d1d3")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R17")
 					(unit 1)
@@ -5835,7 +5918,7 @@
 			(uuid "57c85893-debe-44bf-a078-b7b517088ef2")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "C6")
 					(unit 1)
@@ -5916,7 +5999,7 @@
 			(uuid "1c47edda-0a7b-463f-b19a-faf2be092314")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R11")
 					(unit 1)
@@ -5997,7 +6080,7 @@
 			(uuid "95293828-d76a-454e-8b03-4fc23cdfb3cb")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R18")
 					(unit 1)
@@ -6078,7 +6161,7 @@
 			(uuid "f78073a9-4200-4c92-96f7-5be16cfd3b37")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R16")
 					(unit 1)
@@ -6156,128 +6239,9 @@
 			(uuid "00a1a038-ac90-49c6-919c-4171388eba67")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:USB_C_Receptacle_USB2.0_14P")
-		(at 31.75 85.09 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5bfed3ad-e839-4b11-ac39-151751e16bec")
-		(property "Reference" "J3"
-			(at 31.75 62.23 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "USB_C_Receptacle_USB2.0_14P"
-			(at 31.75 64.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
-			(at 35.56 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
-			(at 35.56 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "USB 2.0-only 14P Type-C Receptacle connector"
-			(at 31.75 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "B5"
-			(uuid "f58c1d2b-f343-42be-ac03-581204e2d7e1")
-		)
-		(pin "B6"
-			(uuid "71842702-c79d-4697-82a3-5e4030e4eaf7")
-		)
-		(pin "SH"
-			(uuid "aed451df-4640-46e7-a828-060e2214c475")
-		)
-		(pin "B7"
-			(uuid "58244c11-4f4f-49fd-8f37-50cf66d68e1c")
-		)
-		(pin "A12"
-			(uuid "c5e493b6-0805-4d23-b957-23b1dce0031b")
-		)
-		(pin "A9"
-			(uuid "76ba56ae-1278-45b9-8f9f-49cda278a463")
-		)
-		(pin "A7"
-			(uuid "3734ebaa-59c1-4bfb-82ae-a57621a8635c")
-		)
-		(pin "B12"
-			(uuid "750c3a0e-0c02-44c7-b813-39b93362c1e8")
-		)
-		(pin "B9"
-			(uuid "5008219d-72e6-4763-a470-4175d1f31613")
-		)
-		(pin "B4"
-			(uuid "3f4c7371-eea8-444a-b492-da1d1477ec98")
-		)
-		(pin "B1"
-			(uuid "d4735298-689a-4752-ab0f-6e35403fa561")
-		)
-		(pin "A6"
-			(uuid "09e17ccc-b857-4ff7-aad1-2e6c16f6d963")
-		)
-		(pin "A5"
-			(uuid "e3a4d7ad-8fd9-45aa-acf4-9707b8c6157e")
-		)
-		(pin "A4"
-			(uuid "9377f04d-003b-4aea-af86-981bd0438e53")
-		)
-		(pin "A1"
-			(uuid "f5b44f75-5b21-42a5-9c9e-a0cecf61fdb8")
-		)
-		(instances
-			(project "SCPI_tempIO"
-				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
-					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -6353,7 +6317,7 @@
 			(uuid "5d1b6700-b982-48ed-b8ac-e99ce3f01b01")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR010")
 					(unit 1)
@@ -6431,7 +6395,7 @@
 			(uuid "c3001b44-2e3e-4a6a-b98e-c236e6f568f0")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR09")
 					(unit 1)
@@ -6512,7 +6476,7 @@
 			(uuid "80409eb7-c0e2-411d-9d95-3a875ad7cdd5")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R20")
 					(unit 1)
@@ -6618,7 +6582,7 @@
 			(uuid "cd2e6004-5c30-45ae-8aa8-82ba3d346099")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "J1")
 					(unit 1)
@@ -6699,87 +6663,9 @@
 			(uuid "8a2f2407-e78b-4be2-b319-f5a667544a13")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 81.28 118.11 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8a30df5f-cc8d-4e7c-a64d-d5eb70b32c2a")
-		(property "Reference" "#PWR012"
-			(at 81.28 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 81.28 123.19 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 81.28 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 81.28 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "02185a3e-e5d5-4622-8073-791b9e46815d")
-		)
-		(instances
-			(project "SCPI_tempIO"
-				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
-					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -6859,7 +6745,7 @@
 			(uuid "562158fa-0c50-4f03-a18f-d3479953ac26")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R9")
 					(unit 1)
@@ -6940,7 +6826,7 @@
 			(uuid "a38fb4b2-f630-4d7e-8c14-01c98b6fcd4b")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R14")
 					(unit 1)
@@ -7033,7 +6919,7 @@
 			(uuid "87dea8f1-9212-497a-a4b7-f308f2c66936")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "D1")
 					(unit 1)
@@ -7111,7 +6997,7 @@
 			(uuid "7c68f772-656d-470d-82b0-3923ebfa87b7")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR015")
 					(unit 1)
@@ -7192,7 +7078,7 @@
 			(uuid "1064eb15-7bc8-44f2-b71f-714b1e2b7a13")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R21")
 					(unit 1)
@@ -7270,7 +7156,7 @@
 			(uuid "bb10fdb8-b3e5-4c58-95ae-ff50dada234f")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR08")
 					(unit 1)
@@ -7359,9 +7245,134 @@
 			(uuid "42e977a3-8242-4624-83c2-874b9bb221a8")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
+		(at 31.75 85.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dfc50edd-0cab-44da-815a-6e91c0da4c6a")
+		(property "Reference" "J3"
+			(at 31.75 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "USB_C_Receptacle_USB2.0_16P"
+			(at 31.75 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_G-Switch_GT-USB-7025"
+			(at 35.56 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+			(at 35.56 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
+			(at 31.75 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "A1"
+			(uuid "e06bc97c-0b59-485a-8fdc-919cf6e0003c")
+		)
+		(pin "A5"
+			(uuid "7eb4ead2-a947-4869-adea-c69644c2991a")
+		)
+		(pin "A4"
+			(uuid "909b92b6-c8ae-4191-b8b0-b4bf77a5c175")
+		)
+		(pin "B8"
+			(uuid "b8f12672-a003-45fa-a6cd-ccb967017d35")
+		)
+		(pin "B9"
+			(uuid "ac685a39-5417-4040-af5e-85cd64963cc6")
+		)
+		(pin "B7"
+			(uuid "75bb8afb-63f1-4589-a7a6-74d76e1af113")
+		)
+		(pin "B5"
+			(uuid "5113a44f-5d27-442f-9fae-0eb441619c26")
+		)
+		(pin "B6"
+			(uuid "f5d17f13-25d0-47eb-aae8-c196bbd74694")
+		)
+		(pin "A6"
+			(uuid "ca2f98a8-b253-4e03-a0e1-d3594dac5884")
+		)
+		(pin "SH"
+			(uuid "84d07f52-e8a1-4a26-aa59-727408ffeafd")
+		)
+		(pin "A7"
+			(uuid "060d2cb2-58fe-4c10-823f-bf051b9e3b8f")
+		)
+		(pin "A8"
+			(uuid "0269ba91-2d40-4e3f-a7e7-1a1da483fe4e")
+		)
+		(pin "A9"
+			(uuid "ba3e6ad2-befb-45d5-b092-5dc95ea5001d")
+		)
+		(pin "A12"
+			(uuid "22df8024-c14f-4ead-9bb2-316c49517001")
+		)
+		(pin "B1"
+			(uuid "c7b22ae6-e91b-4a7d-85ed-50e6c9019ca4")
+		)
+		(pin "B4"
+			(uuid "68ae96cb-4840-4033-9edf-005608f6f599")
+		)
+		(pin "B12"
+			(uuid "de1f2aa5-d073-4ed0-b9c8-4143a92cab14")
+		)
+		(instances
+			(project "SCPI_tempIO-rounded"
+				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -7437,7 +7448,7 @@
 			(uuid "aa68bbf1-b615-4b45-813e-0f3029be88d5")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR07")
 					(unit 1)
@@ -7541,7 +7552,7 @@
 			(uuid "b6d3c43d-d91a-433a-aff5-9fc03741bcd8")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "J2")
 					(unit 1)
@@ -7619,7 +7630,7 @@
 			(uuid "5e1adfe3-8ead-4a6c-8b21-17cbcbc95320")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR013")
 					(unit 1)
@@ -7700,7 +7711,7 @@
 			(uuid "69bba61e-197a-4d28-9694-586a766b2111")
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R19")
 					(unit 1)
@@ -7776,7 +7787,7 @@
 			)
 		)
 		(instances
-			(project "SCPI_tempIO"
+			(project "SCPI_tempIO-rounded"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(page "2")
 				)

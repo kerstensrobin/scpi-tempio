@@ -211,6 +211,7 @@
       ],
       "track_widths": [
         0.0,
+        0.1,
         0.2,
         0.5,
         1.0
@@ -504,7 +505,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "SCPI_tempIO.kicad_pro",
+    "filename": "SCPI_tempIO-rounded.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -664,7 +665,7 @@
         "uuid": "3fa88ee0-2858-4485-b643-2061ac43b60a"
       }
     ],
-    "used_designators": "",
+    "used_designators": "J3,J6",
     "variants": []
   },
   "sheets": [
