@@ -3303,6 +3303,27 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "HOTFIX! originally connected to VBUS,\n but should be mcu Vcc"
+		(exclude_from_sim no)
+		(at 74.93 71.882 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "362befb8-9039-42e1-aa5b-cd3d55f1dba0")
+	)
+	(text "note for Treedix.com JTAG/SWD adapter board, \ninstall VCC->VREF jumper.\nOtherwise ST-link will read Vref 1.7V, \nwhich means the pin is floating.\n"
+		(exclude_from_sim no)
+		(at 26.416 130.048 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left)
+		)
+		(uuid "5369ab4a-a1b7-46a5-8ba2-139774114aba")
+	)
 	(text "\nC5,C6,C9\nC49678\n100n\n0805\n\nC7\nC28323\n1u\n0805\n\nC8\nC1744\n4.7n\n0805\n\nD1\nC965793\nLED\n0402\n\nJ1\nC2935458\nConn_ARM_JTAG_SWD_10\nPinHeader_2x05_P1.27mm_Vertical_SMD\n\nJ3\nC963213\nUSB_C_Receptacle_USB2.0_16P\nUSB_C_Receptacle_G-Switch_GT-USB-7025\n\nR9\nC11702\n1000\n0402\n\nR10,R11\nC25905\n5.1k\n0402\n\nR12,R13\nC25092\n22\n0402\n\nR14,R15,R16,R17,R18,R19,R20,R21\nC25104\n330\n0402\n\nR23,R24\nC25744\n10k\n0402\n\nSW1\nC10852\nSW_SPST\nSW_Push_1P1T_NO_CK_KSC7xxJ\n\nU1\nC5270165\nST STM32G0B1KBT6\nLQFP-32_7x7mm_P0.8mm\n\nU2\nC23380830\nAP2112K-3.3\nSOT-23-5\n\nU3\nC54946589\nSHT4x\nSensirion_DFN-4_1.5x1.5mm_P0.8mm_SHT4x_NoCentralPad\n"
 		(exclude_from_sim no)
 		(at 99.06 196.85 90)
@@ -3339,22 +3360,10 @@
 		(uuid "4e67df08-6886-4862-a33b-ddbd2889a002")
 	)
 	(junction
-		(at 66.04 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5cf163b5-cd5f-4067-903c-507857fad460")
-	)
-	(junction
 		(at 96.52 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "662e0aea-1afd-4b47-bf61-0e2987804804")
-	)
-	(junction
-		(at 66.04 69.85)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7ab29c0e-b271-4620-9a10-93dc5aefc946")
 	)
 	(junction
 		(at 107.95 31.75)
@@ -3367,6 +3376,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aa8a5ec5-38d1-4647-b5c1-a3f8cc35955d")
+	)
+	(junction
+		(at 91.44 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b69d9dc1-4d4f-4aa2-b4a4-70c028991209")
+	)
+	(junction
+		(at 66.04 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d94fb85d-1d45-49aa-bd58-adfb1dba09fa")
 	)
 	(junction
 		(at 137.16 31.75)
@@ -3578,16 +3599,6 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 96.52) (xy 66.04 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "36fa3657-0754-4f9a-b4d7-c393e9fa7867")
-	)
-	(wire
-		(pts
 			(xy 72.39 34.29) (xy 69.85 34.29)
 		)
 		(stroke
@@ -3618,6 +3629,17 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 93.98) (xy 74.93 49.53)
+		)
+		(stroke
+			(width 0)
+			(type dash_dot)
+			(color 0 194 0 1)
+		)
+		(uuid "3fb74d65-e1e2-4ce5-93c4-203a83675ebc")
+	)
+	(wire
+		(pts
 			(xy 96.52 31.75) (xy 107.95 31.75)
 		)
 		(stroke
@@ -3625,6 +3647,16 @@
 			(type default)
 		)
 		(uuid "3fbb3336-966a-4ff8-b427-2ae92654163a")
+	)
+	(wire
+		(pts
+			(xy 74.93 49.53) (xy 91.44 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4154827c-201b-40d2-bc1a-6ac02b58e279")
 	)
 	(wire
 		(pts
@@ -3805,6 +3837,16 @@
 			(type default)
 		)
 		(uuid "6ab0cf43-3e2c-4ba3-8782-68d74769b0dc")
+	)
+	(wire
+		(pts
+			(xy 66.04 93.98) (xy 74.93 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7162d24d-ce49-4c09-a0f8-be3b0f6883cc")
 	)
 	(wire
 		(pts
@@ -4008,6 +4050,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 49.53) (xy 91.44 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2498ada-15e3-4a40-8caf-17ce0c78d260")
+	)
+	(wire
+		(pts
 			(xy 193.04 90.17) (xy 193.04 72.39)
 		)
 		(stroke
@@ -4168,6 +4220,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 96.52) (xy 66.04 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd95bb13-9256-46f5-a959-009def6d5dce")
+	)
+	(wire
+		(pts
 			(xy 59.69 77.47) (xy 57.15 77.47)
 		)
 		(stroke
@@ -4198,7 +4260,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 31.75) (xy 96.52 31.75)
+			(xy 87.63 31.75) (xy 91.44 31.75)
 		)
 		(stroke
 			(width 0)
@@ -4325,6 +4387,16 @@
 			(type default)
 		)
 		(uuid "f2603732-e4a4-48e8-b89b-845f1feeadec")
+	)
+	(wire
+		(pts
+			(xy 91.44 31.75) (xy 96.52 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f87aa49f-3817-4192-af5c-c423e3072178")
 	)
 	(wire
 		(pts
@@ -4625,7 +4697,7 @@
 			(uuid "f4103f1e-f52f-41cb-b415-3fac827982ed")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR03")
 					(unit 1)
@@ -4703,7 +4775,7 @@
 			(uuid "2e2d0a24-2f79-4199-8773-2fe5dbc85b85")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR02")
 					(unit 1)
@@ -4781,7 +4853,7 @@
 			(uuid "2e1985f8-703b-41a1-9746-16f5c25ad50c")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR05")
 					(unit 1)
@@ -4859,7 +4931,7 @@
 			(uuid "affaa314-3b02-40e3-83e5-76f97e1f90c8")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR04")
 					(unit 1)
@@ -4937,7 +5009,7 @@
 			(uuid "b3c476c5-ac33-49cb-ad0f-c672be618980")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR01")
 					(unit 1)
@@ -5017,7 +5089,7 @@
 			(uuid "f059443d-17cd-4a2b-ae77-32f13a5bf87b")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "SW1")
 					(unit 1)
@@ -5098,7 +5170,7 @@
 			(uuid "7febe758-2775-4182-a387-384d8ff1ced4")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R10")
 					(unit 1)
@@ -5271,7 +5343,7 @@
 			(uuid "67f6b2cd-139e-4f72-b4c6-efba4e78c424")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "U1")
 					(unit 1)
@@ -5352,7 +5424,7 @@
 			(uuid "53730b07-7a18-47d2-9535-4c4a0437382d")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R15")
 					(unit 1)
@@ -5434,7 +5506,7 @@
 			(uuid "5df0f2b9-838a-4095-ba4d-bd4637284675")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "C8")
 					(unit 1)
@@ -5514,7 +5586,7 @@
 			(uuid "a9860326-331b-47c4-b2ec-a974c7ba2642")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "C5")
 					(unit 1)
@@ -5592,7 +5664,7 @@
 			(uuid "453f343b-4bb2-4228-b027-fc445927b0b0")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR011")
 					(unit 1)
@@ -5674,7 +5746,7 @@
 			(uuid "13cfe599-736c-4238-be52-415d44a36385")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "C7")
 					(unit 1)
@@ -5755,7 +5827,7 @@
 			(uuid "a2676285-23ac-4455-936f-e03208390c8e")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R12")
 					(unit 1)
@@ -5836,7 +5908,7 @@
 			(uuid "bb1ecf49-30de-4937-8aba-bb8f5d69d1d3")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R17")
 					(unit 1)
@@ -5918,7 +5990,7 @@
 			(uuid "57c85893-debe-44bf-a078-b7b517088ef2")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "C6")
 					(unit 1)
@@ -5999,7 +6071,7 @@
 			(uuid "1c47edda-0a7b-463f-b19a-faf2be092314")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R11")
 					(unit 1)
@@ -6080,7 +6152,7 @@
 			(uuid "95293828-d76a-454e-8b03-4fc23cdfb3cb")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R18")
 					(unit 1)
@@ -6161,7 +6233,7 @@
 			(uuid "f78073a9-4200-4c92-96f7-5be16cfd3b37")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R16")
 					(unit 1)
@@ -6239,7 +6311,7 @@
 			(uuid "00a1a038-ac90-49c6-919c-4171388eba67")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR014")
 					(unit 1)
@@ -6317,7 +6389,7 @@
 			(uuid "5d1b6700-b982-48ed-b8ac-e99ce3f01b01")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR010")
 					(unit 1)
@@ -6395,7 +6467,7 @@
 			(uuid "c3001b44-2e3e-4a6a-b98e-c236e6f568f0")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR09")
 					(unit 1)
@@ -6476,7 +6548,7 @@
 			(uuid "80409eb7-c0e2-411d-9d95-3a875ad7cdd5")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R20")
 					(unit 1)
@@ -6582,7 +6654,7 @@
 			(uuid "cd2e6004-5c30-45ae-8aa8-82ba3d346099")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "J1")
 					(unit 1)
@@ -6663,7 +6735,7 @@
 			(uuid "8a2f2407-e78b-4be2-b319-f5a667544a13")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R13")
 					(unit 1)
@@ -6745,7 +6817,7 @@
 			(uuid "562158fa-0c50-4f03-a18f-d3479953ac26")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R9")
 					(unit 1)
@@ -6826,7 +6898,7 @@
 			(uuid "a38fb4b2-f630-4d7e-8c14-01c98b6fcd4b")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R14")
 					(unit 1)
@@ -6919,7 +6991,7 @@
 			(uuid "87dea8f1-9212-497a-a4b7-f308f2c66936")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "D1")
 					(unit 1)
@@ -6997,7 +7069,7 @@
 			(uuid "7c68f772-656d-470d-82b0-3923ebfa87b7")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR015")
 					(unit 1)
@@ -7078,7 +7150,7 @@
 			(uuid "1064eb15-7bc8-44f2-b71f-714b1e2b7a13")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R21")
 					(unit 1)
@@ -7096,7 +7168,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "db40fa52-00f4-41f4-8ffd-8113fdc80db3")
 		(property "Reference" "#PWR08"
 			(at 100.33 138.43 0)
@@ -7110,7 +7181,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 100.33 137.16 0)
+			(at 103.124 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7156,7 +7227,7 @@
 			(uuid "bb10fdb8-b3e5-4c58-95ae-ff50dada234f")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR08")
 					(unit 1)
@@ -7245,7 +7316,7 @@
 			(uuid "42e977a3-8242-4624-83c2-874b9bb221a8")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "U2")
 					(unit 1)
@@ -7370,7 +7441,7 @@
 			(uuid "de1f2aa5-d073-4ed0-b9c8-4143a92cab14")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "J3")
 					(unit 1)
@@ -7448,7 +7519,7 @@
 			(uuid "aa68bbf1-b615-4b45-813e-0f3029be88d5")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR07")
 					(unit 1)
@@ -7552,7 +7623,7 @@
 			(uuid "b6d3c43d-d91a-433a-aff5-9fc03741bcd8")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "J2")
 					(unit 1)
@@ -7630,7 +7701,7 @@
 			(uuid "5e1adfe3-8ead-4a6c-8b21-17cbcbc95320")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "#PWR013")
 					(unit 1)
@@ -7711,7 +7782,7 @@
 			(uuid "69bba61e-197a-4d28-9694-586a766b2111")
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(reference "R19")
 					(unit 1)
@@ -7787,7 +7858,7 @@
 			)
 		)
 		(instances
-			(project "SCPI_tempIO-rounded"
+			(project "SCPI_tempIO"
 				(path "/3fa88ee0-2858-4485-b643-2061ac43b60a"
 					(page "2")
 				)
