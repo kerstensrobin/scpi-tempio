@@ -1,0 +1,45 @@
+!SESSION 2026-07-21 16:38:22.817 -----------------------------------------------
+eclipse.buildId=Version 2.2.0
+java.version=21.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-07-21 16:38:55.197
+!MESSAGE Log4j2 initialized with config file /home/robin/nacho/scpi-tempio/STM/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-07-21 16:38:58.113
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2026-07-21 16:41:39.501
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.debug.1430112967
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2026-07-21 16:41:39.510
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.debug.1430112967
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2026-07-21 16:41:39.516
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1280855260
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.arm-none 4 4 2026-07-21 16:41:39.517
+!MESSAGE Failed to get MCU from name "" in toolchain com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1280855260
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-07-21 16:41:41.238
+!MESSAGE Indexed 'tempio' (0 sources, 0 headers) in 0.003 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-07-21 16:44:53.589
+!MESSAGE Indexed 'tempio' (3 sources, 53 headers) in 0.946 sec: 1,954 declarations; 2,866 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+!SESSION 2026-07-21 19:37:31.725 -----------------------------------------------
+eclipse.buildId=Version 2.2.0
+java.version=21.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-07-21 19:37:47.890
+!MESSAGE Log4j2 initialized with config file /home/robin/nacho/scpi-tempio/STM/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-07-21 19:37:51.777
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-07-21 19:38:30.639
+!MESSAGE Indexed 'tempio' (19 sources, 110 headers) in 6.02 sec: 9,134 declarations; 37,513 references; 3 unresolved inclusions; 26 syntax errors; 169 unresolved names (0.36%)

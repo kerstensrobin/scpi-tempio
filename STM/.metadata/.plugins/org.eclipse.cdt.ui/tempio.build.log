@@ -1,0 +1,10 @@
+19:43:23 **** Incremental Build of configuration Debug for project tempio ****
+make -j8 all 
+arm-none-eabi-size  tempio.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5492	     12	   1572	   7076	   1ba4	tempio.elf
+Finished building: default.size.stdout
+ 
+
+19:43:23 Build Finished. 0 errors, 0 warnings. (took 164ms)
+
