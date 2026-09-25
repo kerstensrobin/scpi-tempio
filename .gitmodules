@@ -1,0 +1,3 @@
+[submodule "STM/lib/tinyusb"]
+	path = STM/lib/tinyusb
+	url = https://github.com/hathach/tinyusb.git
