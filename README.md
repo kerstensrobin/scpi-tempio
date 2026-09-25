@@ -155,6 +155,20 @@ This improves tolerance against:
 
 ## GPIO Header (J2)
 
+2×5 box header, 2.54 mm pitch. Top view, pin 1 top-left:
+
+```text
+          ┌──────────────┐
+  3V3   ■ 1            2 ●  DIO0
+  DIO1  ● 3            4 ●  DIO2
+  DIO3  ● 5            6 ●  DIO4
+  DIO5  ● 7            8 ●  DIO6
+  DIO7  ● 9           10 ●  GND
+          └──────────────┘
+```
+
+Pin 1 (3V3) has the square pad on the bottom side and the triangle mark on the header housing. The pins alternate between the two rows: odd pins in one row, even pins in the other. DIO0 sits right next to 3V3, and GND is in the opposite corner.
+
 | Pin | Function |
 | --- | -------- |
 | 1   | 3V3      |
