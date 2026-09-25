@@ -7,6 +7,7 @@
 #include <ctype.h>
 #include <stdarg.h>
 #include <stdbool.h>
+#include <stdint.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -113,6 +114,108 @@ static void fmt_c100(char *buf, size_t n, int32_t v)
 
 #define SCPI_NAN "9.91E37"
 
+/* Fixed-point value to text, trailing zeros dropped. fmt_num(buf, n, 1000000, 3) -> "1000",
+ * fmt_num(buf, n, 3333, 2) -> "33.33". Integer only: printf has no float in newlib-nano. */
+static void fmt_num(char *buf, size_t n, uint64_t x, unsigned decimals)
+{
+  uint32_t scale = 1;
+  for (unsigned i = 0; i < decimals; i++) scale *= 10;
+  unsigned long ip = (unsigned long)(x / scale), fp = (unsigned long)(x % scale);
+  int len = snprintf(buf, n, "%lu.%0*lu", ip, (int)decimals, fp);
+  while (len > 0 && buf[len - 1] == '0') buf[--len] = '\0';
+  if (len > 0 && buf[len - 1] == '.') buf[--len] = '\0';
+}
+
+/* Case-insensitive compare of the first n chars of s with the whole of word. */
+static bool word_eq(const char *s, size_t n, const char *word)
+{
+  if (strlen(word) != n) return false;
+  for (size_t i = 0; i < n; i++)
+    if (toupper((unsigned char)s[i]) != word[i]) return false;
+  return true;
+}
+
+#define NUM_TOO_BIG UINT64_MAX
+
+/* Decimal number ("12", "2.5", "1e3", "+0.5E-1") as fixed point with `decimals` digits:
+ * parse_decimal("2.5", 3) -> 2500. Values that are negative or too large give NUM_TOO_BIG,
+ * which every range check rejects. Replaces strtod(), which costs several KB of flash. */
+static bool parse_decimal(const char **p, unsigned decimals, uint64_t *out)
+{
+  const char *s = *p;
+  bool neg = false;
+  if (*s == '+' || *s == '-') neg = *s++ == '-';
+
+  uint64_t mant = 0;
+  int exp10 = 0, ndigits = 0;
+  bool big = false;
+  for (bool frac = false;; s++) {
+    if (*s == '.' && !frac) {
+      frac = true;
+      continue;
+    }
+    if (!isdigit((unsigned char)*s)) break;
+    ndigits++;
+    if (mant < 100000000000000000ull) { /* keep 17 significant digits */
+      mant = mant * 10 + (uint64_t)(*s - '0');
+      if (frac) exp10--;
+    } else if (!frac) {
+      exp10++;
+    }
+  }
+  if (!ndigits) {
+    scpi_push_error(-120, "Numeric data error");
+    return false;
+  }
+  if (*s == 'e' || *s == 'E') {
+    const char *e = s + 1;
+    bool eneg = false;
+    if (*e == '+' || *e == '-') eneg = *e++ == '-';
+    if (isdigit((unsigned char)*e)) {
+      int ev = 0;
+      while (isdigit((unsigned char)*e)) ev = ev < 1000 ? ev * 10 + (*e++ - '0') : (e++, ev);
+      exp10 += eneg ? -ev : ev;
+      s = e;
+    }
+  }
+
+  exp10 += (int)decimals;
+  for (; exp10 > 0 && !big; exp10--) {
+    if (mant > UINT64_MAX / 10) big = true;
+    else mant *= 10;
+  }
+  for (; exp10 < 0 && mant; exp10++) mant = exp10 == -1 ? (mant + 5) / 10 : mant / 10;
+
+  *out = (big || (neg && mant)) ? NUM_TOO_BIG : mant;
+  *p = s;
+  return true;
+}
+
+/* Frequency in millihertz, with optional unit: "1000", "1e3", "1 kHz", "2.5MHZ". */
+static bool parse_freq(const char **p, uint64_t *mhz)
+{
+  uint64_t v; /* nanohertz until the unit is known, so "32.000001MHZ" keeps its precision */
+  if (!parse_decimal(p, 9, &v)) return false;
+  const char *end = *p;
+  while (isspace((unsigned char)*end)) end++;
+  size_t n = 0;
+  while (isalpha((unsigned char)end[n])) n++;
+  if (n) {
+    uint64_t mult = 1;
+    if (word_eq(end, n, "HZ")) mult = 1;
+    else if (word_eq(end, n, "KHZ")) mult = 1000;
+    else if (word_eq(end, n, "MHZ")) mult = 1000000; /* SCPI: MHZ is mega, not milli */
+    else {
+      scpi_push_error(-131, "Invalid suffix");
+      return false;
+    }
+    v = v > NUM_TOO_BIG / mult ? NUM_TOO_BIG : v * mult;
+  }
+  *mhz = v == NUM_TOO_BIG ? NUM_TOO_BIG : (v + 500000) / 1000000;
+  *p = end + n;
+  return true;
+}
+
 /* ---------- handlers ---------- */
 
 static void cmd_idn(cmd_t *c)
@@ -196,7 +299,7 @@ static void cmd_pin_mode(cmd_t *c)
 static void cmd_pin_mode_q(cmd_t *c)
 {
   if (!pin_suffix(c) || !no_param(c)) return;
-  static const char *const names[] = {"IN", "OUT", "OD"};
+  static const char *const names[] = {"IN", "OUT", "OD", "PWM"};
   reply(c, "%s", names[dio_get_mode((unsigned)c->suffix)]);
 }
 
@@ -215,6 +318,51 @@ static void cmd_pin(cmd_t *c)
 static void cmd_pin_q(cmd_t *c)
 {
   if (pin_suffix(c) && no_param(c)) reply(c, "%d", dio_read((unsigned)c->suffix));
+}
+
+/* DIG:PIN<n>:PWM <freq>[,<duty %>]   duty defaults to 50 */
+static void cmd_pin_pwm(cmd_t *c)
+{
+  if (!pin_suffix(c) || !need_param(c)) return;
+  const char *p = c->param;
+  uint64_t freq, duty = 5000; /* 50.00 % */
+  if (!parse_freq(&p, &freq)) return;
+  while (isspace((unsigned char)*p)) p++;
+  if (*p == ',') {
+    p++;
+    while (isspace((unsigned char)*p)) p++;
+    if (!parse_decimal(&p, 2, &duty)) return;
+    while (isspace((unsigned char)*p)) p++;
+    if (*p == '%') p++;
+    while (isspace((unsigned char)*p)) p++;
+  }
+  if (*p) {
+    scpi_push_error(-224, "Illegal parameter value");
+    return;
+  }
+
+  if (duty > DIO_PWM_DUTY_MAX) duty = DIO_PWM_DUTY_MAX + 1; /* out of range, fits in uint32 */
+  switch (dio_set_pwm((unsigned)c->suffix, freq, (uint32_t)duty)) {
+    case DIO_OK: break;
+    case DIO_ERR_RANGE:
+      scpi_push_error(-222, "Data out of range; 0.1 Hz to 32 MHz, duty 0 to 100");
+      break;
+    case DIO_ERR_CONFLICT:
+      scpi_push_error(-221, "Settings conflict; timer shared with another PWM pin");
+      break;
+  }
+}
+
+static void cmd_pin_pwm_q(cmd_t *c)
+{
+  if (!pin_suffix(c) || !no_param(c)) return;
+  uint64_t freq;
+  uint32_t duty;
+  dio_get_pwm((unsigned)c->suffix, &freq, &duty);
+  char fs[24], ds[16];
+  fmt_num(fs, sizeof fs, freq, 3);
+  fmt_num(ds, sizeof ds, duty, 2);
+  reply(c, "%s,%s", fs, ds);
 }
 
 static void cmd_port_q(cmd_t *c)
@@ -246,6 +394,8 @@ static const scpi_cmd_t commands[] = {
   {"MEASure:ALL?",         cmd_meas_all},
   {"DIGital:PIN#:MODE",    cmd_pin_mode},
   {"DIGital:PIN#:MODE?",   cmd_pin_mode_q},
+  {"DIGital:PIN#:PWM",     cmd_pin_pwm},
+  {"DIGital:PIN#:PWM?",    cmd_pin_pwm_q},
   {"DIGital:PIN#",         cmd_pin},
   {"DIGital:PIN#?",        cmd_pin_q},
   {"DIGital:PORT?",        cmd_port_q},
