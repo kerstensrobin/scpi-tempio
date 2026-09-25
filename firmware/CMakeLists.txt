@@ -54,10 +54,12 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     App/Src/sht4x.c
     App/Src/usb_descriptors.c
     App/Src/usb_hw.c
+    App/Src/usbtmc_app.c
     ${TINYUSB_DIR}/src/tusb.c
     ${TINYUSB_DIR}/src/common/tusb_fifo.c
     ${TINYUSB_DIR}/src/device/usbd.c
     ${TINYUSB_DIR}/src/class/cdc/cdc_device.c
+    ${TINYUSB_DIR}/src/class/usbtmc/usbtmc_device.c
     ${TINYUSB_DIR}/src/portable/st/stm32_fsdev/dcd_stm32_fsdev.c
     ${TINYUSB_DIR}/src/portable/st/stm32_fsdev/fsdev_common.c
 )

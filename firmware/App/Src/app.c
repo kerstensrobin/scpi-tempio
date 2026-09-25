@@ -10,14 +10,14 @@
 #define LED_PORT GPIOA
 #define LED_PIN  GPIO_PIN_15
 
-#define LINE_MAX 128
-
 void usb_hw_init(void);
+void usbtmc_task(void);
 
-static char line[LINE_MAX];
+static char line[APP_LINE_MAX];
 static size_t line_len;
 static bool line_overflow;
 static uint32_t led_off_until;
+static uint32_t identify_until;
 
 const char *app_serial(void)
 {
@@ -54,7 +54,7 @@ static void cdc_write(const char *s)
 
 static void handle_line(void)
 {
-  static char out[256];
+  static char out[APP_RESP_MAX];
   line[line_len] = '\0';
   scpi_process_line(line, out, sizeof out);
   if (out[0]) {
@@ -62,7 +62,17 @@ static void handle_line(void)
     cdc_write("\n");
     tud_cdc_write_flush();
   }
-  led_off_until = HAL_GetTick() + 30; /* activity blink */
+  app_activity();
+}
+
+void app_activity(void)
+{
+  led_off_until = HAL_GetTick() + 30;
+}
+
+void app_identify(void)
+{
+  identify_until = HAL_GetTick() + 2000;
 }
 
 static void poll_cdc(void)
@@ -76,7 +86,7 @@ static void poll_cdc(void)
         handle_line();
       line_len = 0;
       line_overflow = false;
-    } else if (line_len < LINE_MAX - 1) {
+    } else if (line_len < APP_LINE_MAX - 1) {
       line[line_len++] = c;
     } else {
       line_overflow = true;
@@ -84,12 +94,15 @@ static void poll_cdc(void)
   }
 }
 
-/* Not enumerated: blink at 2 Hz. Enumerated: on, with a short off-flick per command. */
+/* Not enumerated: blink at 2 Hz. Enumerated: on, with a short off-flick per command.
+ * Identify request (USBTMC indicator pulse): fast 10 Hz blink for 2 s. */
 static void update_led(void)
 {
   uint32_t now = HAL_GetTick();
   bool on;
-  if (!tud_mounted())
+  if ((int32_t)(identify_until - now) > 0)
+    on = (now / 50) & 1;
+  else if (!tud_mounted())
     on = (now / 250) & 1;
   else
     on = (int32_t)(now - led_off_until) >= 0;
@@ -100,5 +113,6 @@ void app_loop(void)
 {
   tud_task();
   poll_cdc();
+  usbtmc_task();
   update_led();
 }

@@ -37,6 +37,11 @@ void scpi_push_error(int code, const char *msg)
   }
 }
 
+unsigned scpi_error_count(void)
+{
+  return err_count;
+}
+
 static scpi_err_t pop_error(void)
 {
   if (err_count == 0) return (scpi_err_t){0, "No error"};

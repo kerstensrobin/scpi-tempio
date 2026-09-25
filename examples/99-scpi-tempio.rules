@@ -1,0 +1,14 @@
+# Nacho.works SCPI-TempIO: let users in plugdev use the USBTMC interface via libusb (pyvisa-py).
+#
+# Install:
+#   sudo cp 99-scpi-tempio.rules /etc/udev/rules.d/
+#   sudo udevadm control --reload
+# then replug the unit.
+
+# USB device node read/write for plugdev
+SUBSYSTEM=="usb", ATTRS{idVendor}=="1209", ATTRS{idProduct}=="0001", MODE="0664", GROUP="plugdev"
+
+# The kernel usbtmc driver claims the interface first, after which libusb gets
+# "Resource busy". Release it again for this device only.
+ACTION=="bind", SUBSYSTEM=="usb", DRIVER=="usbtmc", ATTRS{idVendor}=="1209", ATTRS{idProduct}=="0001", \
+  RUN+="/bin/sh -c 'echo -n %k > /sys/bus/usb/drivers/usbtmc/unbind'"

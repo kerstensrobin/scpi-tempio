@@ -57,13 +57,12 @@ Typical measurements:
 
 ## USB interface
 
-The module connects to a host PC through USB-C.
+The module connects to a host PC through USB-C and shows up as two interfaces at once. Both run the same SCPI commands and share one error queue:
 
-Interface type:
-
-```text
-USB CDC Serial Device
-```
+| Interface          | Use it for                                                         |
+| ------------------ | ------------------------------------------------------------------ |
+| USBTMC (USB488)    | VISA / instrument software: `USB0::0x1209::0x0001::<serial>::INSTR` |
+| CDC serial port    | Terminals, pyserial, anything without VISA; no driver needed       |
 
 USB identification:
 
@@ -81,6 +80,40 @@ The device appears as:
 * /dev/cu.usbmodem* on macOS
 
 It is a native USB device, so the baud rate and other serial settings are ignored; any value works.
+
+## VISA (USBTMC)
+
+VISA resource string:
+
+```text
+USB0::0x1209::0x0001::<serial>::INSTR
+```
+
+The serial is the one returned by `*IDN?`. Some tools print the IDs in decimal: `USB0::4617::1::<serial>::0::INSTR` is the same instrument.
+
+What USBTMC adds over the serial port:
+
+* Found by VID/PID/serial, independent of COM port or ttyACM numbering
+* Explicit message boundaries, no line-termination guessing
+* Device clear (`viClear`): drops a half-sent command and any unread response
+* Status byte (`viReadSTB`): bit 4 MAV = response waiting, bit 2 EAV = error queue not empty
+* Indicator pulse ("identify" in NI MAX): the LED blinks fast for 2 s
+
+Host setup:
+
+* **Windows / macOS:** install NI-VISA or Keysight IO Libraries, they include the USBTMC driver.
+* **Linux:** works with pyvisa + pyvisa-py (`pip install pyvisa pyvisa-py pyusb`). Install the udev rule once so a normal user can open the device and the kernel `usbtmc` driver does not claim it:
+
+  ```sh
+  sudo cp examples/99-scpi-tempio.rules /etc/udev/rules.d/
+  sudo udevadm control --reload
+  ```
+
+  Then replug the unit. Without the rule, pyvisa lists the device but fails with `Resource busy`.
+
+pyvisa-py (0.8) implements read/write/query on USB, but not `read_stb()` or `clear()`; those need NI-VISA or Keysight VISA. The firmware supports both.
+
+The USBTMC interface is deliberately interface 0: pyvisa-py detaches the kernel driver from interface 0 when it opens a USB instrument, and would otherwise disconnect the serial port.
 
 ---
 
@@ -203,7 +236,7 @@ DIG:PIN0 1
 Example response:
 
 ```text
-Nacho.works,SCPI-TempIO v01,2038393741565017002D005E,0.1
+Nacho.works,SCPI-TempIO v01,2038393741565017002D005E,0.2
 ```
 
 Format:
@@ -392,7 +425,8 @@ Errors are queued (up to 8) and read one at a time with `SYST:ERR?`. `0,"No erro
 | ----------------- | ---------------------------------------- |
 | Blinking (2 Hz)   | Not enumerated by a USB host             |
 | On                | Enumerated, ready                        |
-| Short off-flick   | A command line was received              |
+| Short off-flick   | A command was received                   |
+| Fast blink (2 s)  | Identify request (USBTMC indicator pulse) |
 
 ---
 
@@ -439,7 +473,7 @@ Source layout:
 
 | Path                             | Contents                                   |
 | -------------------------------- | ------------------------------------------ |
-| `firmware/App/`                  | Application code (SCPI, SHT41, DIO, USB)   |
+| `firmware/App/`                  | Application code (SCPI, SHT41, DIO, USB CDC + USBTMC) |
 | `firmware/App/Inc/version.h`     | Manufacturer, model and firmware version   |
 | `firmware/Src`, `firmware/Inc`   | CubeMX generated code                      |
 
@@ -508,7 +542,22 @@ python3 examples/tempio_demo.py            # auto-detect on Linux/macOS
 python3 examples/tempio_demo.py COM5       # or give the port
 ```
 
-Minimal version:
+Minimal VISA version:
+
+```python
+import pyvisa
+
+rm = pyvisa.ResourceManager()          # '@py' for pyvisa-py
+print(rm.list_resources())
+
+inst = rm.open_resource('USB0::0x1209::0x0001::2038393741565017002D005E::INSTR')
+print(inst.query('*IDN?'))
+print(inst.query('MEAS:ALL?'))
+inst.write('DIG:PIN0:MODE OUT')
+inst.write('DIG:PIN0 1')
+```
+
+Minimal serial version:
 
 ```python
 import serial
@@ -533,3 +582,4 @@ s.write(b'DIG:PIN0 1\n')
 | -------- | ---------------------------------------------------- |
 | 1.0      | Initial draft                                        |
 | 1.1      | Firmware 0.1: USB CDC SCPI, SHT41, GPIO; MCU corrected to STM32G0B1 |
+| 1.2      | Firmware 0.2: added USBTMC/USB488 interface (VISA) next to CDC |

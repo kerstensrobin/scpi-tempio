@@ -17,4 +17,8 @@
 #define CFG_TUD_CDC_RX_EPSIZE     64
 #define CFG_TUD_CDC_TX_EPSIZE     64
 
+#define CFG_TUD_USBTMC                1
+#define CFG_TUD_USBTMC_ENABLE_INT_EP  1
+#define CFG_TUD_USBTMC_ENABLE_488     1
+
 #endif

@@ -13,4 +13,7 @@ void scpi_process_line(char *line, char *out, size_t out_size);
 /* Queue an SCPI error, e.g. scpi_push_error(-363, "Input buffer overrun"). */
 void scpi_push_error(int code, const char *msg);
 
+/* Number of errors in the queue. */
+unsigned scpi_error_count(void);
+
 #endif
