@@ -6,10 +6,11 @@
 
 ## Repository Contents
 
-* Hardware design files (KiCad): `SCPI_tempIO.kicad_sch`, `SCPI_tempIO-rounded.kicad_pcb`
-* Firmware: `STM/cubeMX/tempio/` (STM32CubeMX + CMake + TinyUSB)
-* SCPI command reference (this file)
-* Example host script: `examples/tempio_demo.py`
+| Path          | Contents                                                        |
+| ------------- | --------------------------------------------------------------- |
+| `hardware/`   | KiCad project; `SCPI_tempIO-rounded.kicad_pcb` is the fabricated board, `production/` holds the JLC outputs |
+| `firmware/`   | STM32CubeMX + CMake project, TinyUSB submodule in `firmware/lib/tinyusb` |
+| `examples/`   | Host-side example scripts (`tempio_demo.py` runs every command) |
 
 ---
 
@@ -428,19 +429,19 @@ Notes:
 
 Toolchain:
 
-* STM32CubeMX for pin and clock configuration (`STM/cubeMX/tempio/tempio.ioc`, toolchain set to CMake)
+* STM32CubeMX for pin and clock configuration (`firmware/tempio.ioc`, toolchain set to CMake)
 * CMake + arm-none-eabi-gcc (the one bundled with STM32CubeIDE works)
 * STM32 HAL
-* TinyUSB 0.21.0 (git submodule in `STM/lib/tinyusb`)
+* TinyUSB 0.21.0 (git submodule in `firmware/lib/tinyusb`)
 * STM32CubeProgrammer CLI or any SWD tool for flashing
 
 Source layout:
 
 | Path                             | Contents                                   |
 | -------------------------------- | ------------------------------------------ |
-| `STM/cubeMX/tempio/App/`         | Application code (SCPI, SHT41, DIO, USB)   |
-| `STM/cubeMX/tempio/App/Inc/version.h` | Manufacturer, model and firmware version |
-| `STM/cubeMX/tempio/Src`, `Inc`   | CubeMX generated code                      |
+| `firmware/App/`                  | Application code (SCPI, SHT41, DIO, USB)   |
+| `firmware/App/Inc/version.h`     | Manufacturer, model and firmware version   |
+| `firmware/Src`, `firmware/Inc`   | CubeMX generated code                      |
 
 Application code lives in `App/` and is called from `main.c` inside the `USER CODE` sections, so regenerating from CubeMX keeps it.
 
@@ -450,7 +451,7 @@ USB is deliberately left disabled in CubeMX. TinyUSB drives the peripheral, and 
 
 ```sh
 git submodule update --init
-cd STM/cubeMX/tempio
+cd firmware
 cmake -S . -B build/Debug -G "Unix Makefiles" \
       -DCMAKE_TOOLCHAIN_FILE=cmake/gcc-arm-none-eabi.cmake -DCMAKE_BUILD_TYPE=Debug
 cmake --build build/Debug

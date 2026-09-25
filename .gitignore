@@ -43,5 +43,5 @@ fp-info-cache
 *.kicad_prl
 
 # Firmware build output and Eclipse/CubeIDE workspace state
-STM/cubeMX/tempio/build/
+firmware/build/
 .metadata/

@@ -37,8 +37,8 @@ add_executable(${CMAKE_PROJECT_NAME})
 # Add STM32CubeMX generated sources
 add_subdirectory(cmake/stm32cubemx)
 
-# TinyUSB (git submodule in STM/lib/tinyusb)
-set(TINYUSB_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../../lib/tinyusb)
+# TinyUSB (git submodule in firmware/lib/tinyusb)
+set(TINYUSB_DIR ${CMAKE_CURRENT_SOURCE_DIR}/lib/tinyusb)
 
 # Link directories setup
 target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
